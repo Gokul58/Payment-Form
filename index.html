@@ -11,7 +11,7 @@
         <h1 style="text-decoration: underline;">Payment Form</h1>
         <h2 style="text-decoration:underline">Contact information</h2>
         <!-- User details -->
-        <p>Name : <input type="text" name="name"></p>
+        <p>Name : <input type="text" name="name" required></p>
         <fieldset>
             <legend>Gender</legend>
             <p>
@@ -22,6 +22,25 @@
         <p>Address : <br><textarea name="address" id="address" cols="100" rows="8"></textarea></p>
         <p>Email : <input type="email" name="email" id="email"></p>
         <p>Pincode : <input type="number" name="pincode" id="pincode"></p>
+        <h2 style="text-decoration: underline;">Payment Information</h2>
+        <p>
+            Card type: <select name="cardtype" id="cardtype">
+                <option value="">--Select a card type--</option>
+                <option value="visa">Visa</option>
+                <option value="rupay">Rupay</option>
+                <option value="mastercard">Mastercard</option>
+            </select>
+        </p>
+        <p>
+            Card number : <input type="number" name="cardnumber" id="cardnumber">
+        </p>
+        <p>
+            Expiration Date : <input type="date" name="expirationdate" id="expirationdate">
+        </p>
+        <p>
+            CVV : <input type="password" name="cvv" id="cvv">
+        </p>
+        <input type="submit" value="Pay Now">
     </form>
 </body>
 </html>
